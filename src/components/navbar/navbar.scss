@@ -1,0 +1,53 @@
+@import "../../utils/utils.scss";
+
+.navbar {
+    height: 48px;
+    background-color: $navbar-color;
+    color: $color-white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.nav {
+    opacity: 0.8;
+}
+
+.nav:hover {
+    opacity: 1;
+}
+
+.nav-icons {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.offer {
+    background-color: #fbfbfd;
+    padding-top: 60px;
+    padding-bottom: 12px;
+    color: #1d1d1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 5px;
+}
+
+.offer-hypertext {
+    color: #06c;
+}
+
+.offer-hypertext:hover {
+    text-decoration: underline;
+}
