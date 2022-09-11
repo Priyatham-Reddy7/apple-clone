@@ -1,0 +1,99 @@
+@import "../../utils/utils.scss";
+
+.footer-container {
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+    padding: 25px 120px 20px;
+    min-width: 1024px;
+}
+
+.terms {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $footer-border-color;
+    :nth-child(1) {
+        margin-bottom: 10px;
+    }
+    P {
+        font-size: 12px;
+    }
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 80px;
+    margin-bottom: 40px;
+    .items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 12px;
+            h3 {
+                font-size: 12px;
+                color: $color-text-gray;
+                font-weight: 600;
+            }
+            a {
+                color: $footer-link-color;
+                font-size: 1em;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.copyright-container {
+    .helpline {
+        padding-bottom: 8px;
+        border-bottom: 1px solid $footer-border-color;
+        p {
+            font-size: 12px;
+            a {
+                color: #06c;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .copyright {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        .copyright-text {
+            font-size: 12px;
+        }
+        .legal-links {
+            font-size: 13px;
+            display: flex;
+            a {
+                padding: 0px 10px;
+                border-right: 1px solid $footer-border-color;
+                color: $footer-link-color;
+                font-weight: 300;
+            }
+            a:last-child {
+                border-right: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        .country {
+            a {
+                color: $footer-link-color;
+                font-size: 13px;
+                font-weight: 300;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
